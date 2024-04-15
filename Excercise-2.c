@@ -5,7 +5,9 @@ int counter=0;
 
 void *thread_task(){
     for(int i=0;i<10;i++){
+        
         printf("\n Thread Global counter = %d", counter);
+
         if(counter % 2 == 1){
             counter++;
         }
